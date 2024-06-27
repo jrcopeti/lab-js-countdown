@@ -9,8 +9,8 @@ let timer = null; // Variable to store the interval
 const button = document.querySelector("#start-btn");
 
 button.addEventListener("click", () => {
-  console.log("button is clicked")
-})
+  startCountdown();
+});
 
 // ITERATION 2: Start Countdown
 function startCountdown() {
