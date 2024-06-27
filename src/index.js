@@ -43,7 +43,7 @@ function showToast(message) {
   toast.classList.add("show");
   setTimeout(() => {
     toast.classList.remove("show");
-    toast.disabled = false;
+    button.disabled = false;
   }, 3000);
 }
 
