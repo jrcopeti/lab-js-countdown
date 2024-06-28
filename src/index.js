@@ -30,6 +30,9 @@ function startCountdown() {
     } else if (remainingTime <= 0) {
       clearInterval(timer);
       showToast("Kick off 🚀");
+      timer.innerText = DURATION;
+      remainingTime = DURATION;
+      button.disabled = false;
     }
     remainingTime--;
   }, 1000);
@@ -43,7 +46,6 @@ function showToast(message) {
   toast.classList.add("show");
   setTimeout(() => {
     toast.classList.remove("show");
-    button.disabled = false;
   }, 3000);
 }
 
